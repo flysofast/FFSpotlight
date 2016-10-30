@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D6BF9F81DC5D27400397256 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BF9F71DC5D27400397256 /* main.m */; };
+		6D6BF9FB1DC5D27400397256 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BF9FA1DC5D27400397256 /* AppDelegate.m */; };
+		6D6BF9FE1DC5D27400397256 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BF9FD1DC5D27400397256 /* ViewController.m */; };
+		6D6BFA011DC5D27400397256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D6BF9FF1DC5D27400397256 /* Main.storyboard */; };
+		6D6BFA031DC5D27400397256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6BFA021DC5D27400397256 /* Assets.xcassets */; };
+		6D6BFA061DC5D27400397256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D6BFA041DC5D27400397256 /* LaunchScreen.storyboard */; };
+		6D6BFA1E1DC5D3E500397256 /* FFGuideline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BFA0F1DC5D3E500397256 /* FFGuideline.m */; };
+		6D6BFA1F1DC5D3E500397256 /* FFSpotLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BFA111DC5D3E500397256 /* FFSpotLightView.m */; };
+		6D6BFA201DC5D3E500397256 /* JDFSequentialTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BFA141DC5D3E500397256 /* JDFSequentialTooltipManager.m */; };
+		6D6BFA211DC5D3E500397256 /* JDFTooltipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BFA161DC5D3E500397256 /* JDFTooltipManager.m */; };
+		6D6BFA221DC5D3E500397256 /* JDFTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BFA191DC5D3E500397256 /* JDFTooltipView.m */; };
+		6D6BFA231DC5D3E500397256 /* UILabel+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BFA1B1DC5D3E500397256 /* UILabel+JDFTooltips.m */; };
+		6D6BFA241DC5D3E500397256 /* UIView+JDFTooltips.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BFA1D1DC5D3E500397256 /* UIView+JDFTooltips.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D6BF9F31DC5D27400397256 /* SpotlightExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotlightExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6BF9F71DC5D27400397256 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D6BF9F91DC5D27400397256 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D6BF9FA1DC5D27400397256 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D6BF9FC1DC5D27400397256 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6D6BF9FD1DC5D27400397256 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D6BFA001DC5D27400397256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D6BFA021DC5D27400397256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D6BFA051DC5D27400397256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D6BFA071DC5D27400397256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D6BFA0E1DC5D3E500397256 /* FFGuideline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFGuideline.h; sourceTree = "<group>"; };
+		6D6BFA0F1DC5D3E500397256 /* FFGuideline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFGuideline.m; sourceTree = "<group>"; };
+		6D6BFA101DC5D3E500397256 /* FFSpotLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFSpotLightView.h; sourceTree = "<group>"; };
+		6D6BFA111DC5D3E500397256 /* FFSpotLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFSpotLightView.m; sourceTree = "<group>"; };
+		6D6BFA131DC5D3E500397256 /* JDFSequentialTooltipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFSequentialTooltipManager.h; sourceTree = "<group>"; };
+		6D6BFA141DC5D3E500397256 /* JDFSequentialTooltipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFSequentialTooltipManager.m; sourceTree = "<group>"; };
+		6D6BFA151DC5D3E500397256 /* JDFTooltipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFTooltipManager.h; sourceTree = "<group>"; };
+		6D6BFA161DC5D3E500397256 /* JDFTooltipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFTooltipManager.m; sourceTree = "<group>"; };
+		6D6BFA171DC5D3E500397256 /* JDFTooltips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFTooltips.h; sourceTree = "<group>"; };
+		6D6BFA181DC5D3E500397256 /* JDFTooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDFTooltipView.h; sourceTree = "<group>"; };
+		6D6BFA191DC5D3E500397256 /* JDFTooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDFTooltipView.m; sourceTree = "<group>"; };
+		6D6BFA1A1DC5D3E500397256 /* UILabel+JDFTooltips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JDFTooltips.h"; sourceTree = "<group>"; };
+		6D6BFA1B1DC5D3E500397256 /* UILabel+JDFTooltips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JDFTooltips.m"; sourceTree = "<group>"; };
+		6D6BFA1C1DC5D3E500397256 /* UIView+JDFTooltips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDFTooltips.h"; sourceTree = "<group>"; };
+		6D6BFA1D1DC5D3E500397256 /* UIView+JDFTooltips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDFTooltips.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D6BF9F01DC5D27400397256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D6BF9EA1DC5D27400397256 = {
+			isa = PBXGroup;
+			children = (
+				6D6BFA0D1DC5D3E500397256 /* FFSpotlight */,
+				6D6BF9F51DC5D27400397256 /* SpotlightExample */,
+				6D6BF9F41DC5D27400397256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D6BF9F41DC5D27400397256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BF9F31DC5D27400397256 /* SpotlightExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D6BF9F51DC5D27400397256 /* SpotlightExample */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BF9F91DC5D27400397256 /* AppDelegate.h */,
+				6D6BF9FA1DC5D27400397256 /* AppDelegate.m */,
+				6D6BF9FC1DC5D27400397256 /* ViewController.h */,
+				6D6BF9FD1DC5D27400397256 /* ViewController.m */,
+				6D6BF9FF1DC5D27400397256 /* Main.storyboard */,
+				6D6BFA021DC5D27400397256 /* Assets.xcassets */,
+				6D6BFA041DC5D27400397256 /* LaunchScreen.storyboard */,
+				6D6BFA071DC5D27400397256 /* Info.plist */,
+				6D6BF9F61DC5D27400397256 /* Supporting Files */,
+			);
+			path = SpotlightExample;
+			sourceTree = "<group>";
+		};
+		6D6BF9F61DC5D27400397256 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BF9F71DC5D27400397256 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D6BFA0D1DC5D3E500397256 /* FFSpotlight */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BFA0E1DC5D3E500397256 /* FFGuideline.h */,
+				6D6BFA0F1DC5D3E500397256 /* FFGuideline.m */,
+				6D6BFA101DC5D3E500397256 /* FFSpotLightView.h */,
+				6D6BFA111DC5D3E500397256 /* FFSpotLightView.m */,
+				6D6BFA121DC5D3E500397256 /* JDFTooltips */,
+			);
+			path = FFSpotlight;
+			sourceTree = "<group>";
+		};
+		6D6BFA121DC5D3E500397256 /* JDFTooltips */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BFA131DC5D3E500397256 /* JDFSequentialTooltipManager.h */,
+				6D6BFA141DC5D3E500397256 /* JDFSequentialTooltipManager.m */,
+				6D6BFA151DC5D3E500397256 /* JDFTooltipManager.h */,
+				6D6BFA161DC5D3E500397256 /* JDFTooltipManager.m */,
+				6D6BFA171DC5D3E500397256 /* JDFTooltips.h */,
+				6D6BFA181DC5D3E500397256 /* JDFTooltipView.h */,
+				6D6BFA191DC5D3E500397256 /* JDFTooltipView.m */,
+				6D6BFA1A1DC5D3E500397256 /* UILabel+JDFTooltips.h */,
+				6D6BFA1B1DC5D3E500397256 /* UILabel+JDFTooltips.m */,
+				6D6BFA1C1DC5D3E500397256 /* UIView+JDFTooltips.h */,
+				6D6BFA1D1DC5D3E500397256 /* UIView+JDFTooltips.m */,
+			);
+			path = JDFTooltips;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D6BF9F21DC5D27400397256 /* SpotlightExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D6BFA0A1DC5D27400397256 /* Build configuration list for PBXNativeTarget "SpotlightExample" */;
+			buildPhases = (
+				6D6BF9EF1DC5D27400397256 /* Sources */,
+				6D6BF9F01DC5D27400397256 /* Frameworks */,
+				6D6BF9F11DC5D27400397256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotlightExample;
+			productName = SpotlightExample;
+			productReference = 6D6BF9F31DC5D27400397256 /* SpotlightExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D6BF9EB1DC5D27400397256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = FlySoFast;
+				TargetAttributes = {
+					6D6BF9F21DC5D27400397256 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EZFY2USRPN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6D6BF9EE1DC5D27400397256 /* Build configuration list for PBXProject "SpotlightExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D6BF9EA1DC5D27400397256;
+			productRefGroup = 6D6BF9F41DC5D27400397256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D6BF9F21DC5D27400397256 /* SpotlightExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D6BF9F11DC5D27400397256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D6BFA061DC5D27400397256 /* LaunchScreen.storyboard in Resources */,
+				6D6BFA031DC5D27400397256 /* Assets.xcassets in Resources */,
+				6D6BFA011DC5D27400397256 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D6BF9EF1DC5D27400397256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D6BF9FE1DC5D27400397256 /* ViewController.m in Sources */,
+				6D6BF9FB1DC5D27400397256 /* AppDelegate.m in Sources */,
+				6D6BFA231DC5D3E500397256 /* UILabel+JDFTooltips.m in Sources */,
+				6D6BFA241DC5D3E500397256 /* UIView+JDFTooltips.m in Sources */,
+				6D6BFA1E1DC5D3E500397256 /* FFGuideline.m in Sources */,
+				6D6BFA211DC5D3E500397256 /* JDFTooltipManager.m in Sources */,
+				6D6BFA201DC5D3E500397256 /* JDFSequentialTooltipManager.m in Sources */,
+				6D6BFA221DC5D3E500397256 /* JDFTooltipView.m in Sources */,
+				6D6BF9F81DC5D27400397256 /* main.m in Sources */,
+				6D6BFA1F1DC5D3E500397256 /* FFSpotLightView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D6BF9FF1DC5D27400397256 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D6BFA001DC5D27400397256 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D6BFA041DC5D27400397256 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D6BFA051DC5D27400397256 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D6BFA081DC5D27400397256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D6BFA091DC5D27400397256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D6BFA0B1DC5D27400397256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EZFY2USRPN;
+				INFOPLIST_FILE = SpotlightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flysofast.SpotlightExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D6BFA0C1DC5D27400397256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EZFY2USRPN;
+				INFOPLIST_FILE = SpotlightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flysofast.SpotlightExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D6BF9EE1DC5D27400397256 /* Build configuration list for PBXProject "SpotlightExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D6BFA081DC5D27400397256 /* Debug */,
+				6D6BFA091DC5D27400397256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D6BFA0A1DC5D27400397256 /* Build configuration list for PBXNativeTarget "SpotlightExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D6BFA0B1DC5D27400397256 /* Debug */,
+				6D6BFA0C1DC5D27400397256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D6BF9EB1DC5D27400397256 /* Project object */;
+}
