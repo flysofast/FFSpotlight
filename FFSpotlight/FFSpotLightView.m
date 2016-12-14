@@ -18,6 +18,7 @@
   FFGuideline *newGuideline;
   int currentGuidelineIndex;
   JDFSequentialTooltipManager *tooltipManager;
+  UIButton *skipButton;
 
 }
 @end
@@ -25,15 +26,6 @@
 @implementation FFSpotLightView
 
 static BOOL isPresenting=NO;
-
-//UIView *highLightView1;
-/*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
- - (void)drawRect:(CGRect)rect {
- // Drawing code
- }
- */
 
 -(instancetype)initInView:(UIView* )view{
   self=[super initWithFrame:view.bounds];
@@ -48,15 +40,30 @@ static BOOL isPresenting=NO;
 
     guidelineViews=[NSMutableArray new];
 
+    skipButton=[[UIButton alloc] initWithFrame:CGRectMake(view.frame.size.width-170, 0, 170, 50)];
+    [skipButton setTitle:@"SKIP TUTORIAL" forState:UIControlStateNormal];
+    [skipButton setBackgroundColor:[UIColor colorWithRed:50/255.0 green:216/255.0 blue:229/255.0 alpha:1]];
+    [skipButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [skipButton addTarget:self
+               action:@selector(skipButtonTouched:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [parentView addSubview:skipButton];
+
   }
   return self;
 }
 
+-(void)skipButtonTouched:(id)sender{
+  [self hideSpotlight];
+}
+
+
 //IMPORTANT: TRAP ALL TOUCH EXCEPT FOR THOSE INSIDE OF THE HIGHLIGHTED CONTROL'S BOUNDS
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
 
-  if(CGRectContainsPoint(interactableArea, point)){
-    //    maskLayer = [[CAShapeLayer alloc] init];
+
+  if(CGRectContainsPoint(interactableArea, point)||CGRectContainsPoint(skipButton.frame, point)){
+//        maskLayer = [[CAShapeLayer alloc] init];
 //    [self moveSpotlightIndex:currentGuidelineIndex+1];
 
     return NO;
@@ -89,7 +96,6 @@ static BOOL isPresenting=NO;
   maskLayer.fillRule = kCAFillRuleEvenOdd;// this line is new
   CGPathRelease(maskPath);
   self.layer.mask = maskLayer;
-
   interactableArea=highlightView.frame;
 }
 
@@ -109,7 +115,12 @@ static BOOL isPresenting=NO;
       [self createHoleWithView:guide.view shape:guide.shape];
 
       currentGuidelineIndex=index;
-      [parentView addSubview:self];
+
+      if(![self isDescendantOfView:parentView]){
+        [parentView addSubview:self];
+        [parentView bringSubviewToFront:skipButton];
+      }
+
       [UIView animateWithDuration:0.3 animations:^{
         self.alpha=0.5;
         [tooltipManager showNextTooltip];
@@ -154,10 +165,12 @@ static BOOL isPresenting=NO;
 
 }
 -(void)hideSpotlight{
+  guidelineViews=nil;
   [UIView animateWithDuration:0.5 animations:^{
     self.alpha=0;
+    skipButton.alpha=0;
   } completion:^(BOOL finished) {
-
+    [skipButton removeFromSuperview];
     [self removeFromSuperview];
   }
    ];
