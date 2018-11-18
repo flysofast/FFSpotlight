@@ -6,7 +6,9 @@ This was inspired by [TourGuide](https://github.com/worker8/TourGuide) for Andro
 Click [here to see my Vietnamese blog post about it](http://flysofast.comuv.com/2016/10/30/tao-huong-dan-su-dung-cho-nguoi-dung-theo-dang-spotlight/?preview=true&preview_id=187&preview_nonce=1a1f80695d&post_format=standard)
 
 #Demo:
+
 ![Result](https://github.com/flysofast/FSFTutorialSpotlight/blob/master/FFSpotlightDemo.gif)
+
 #Installation and Usage:
 Copy everything from `FFSpotlight` folder to your project and use it like this:
 ``` objc
